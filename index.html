@@ -2,14 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>PHAROS-style Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PHAROS-like Network</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="site-title">
       <h1>PHAROS-like Network</h1>
-      <p>The multi-messenger physics & astrophysics of neutron stars</p>
+      <p>The multi-messenger physics &amp; astrophysics of neutron stars</p>
     </div>
     <nav>
       <a href="index.html" class="active">Home</a>
@@ -21,27 +32,70 @@
   </header>
 
   <main>
-    <section>
-      <h2>Welcome</h2>
+    <!-- Hero section -->
+    <section class="hero">
+      <h2>Welcome to the PHAROS-like Network</h2>
       <p>
-        This is a simple static website hosted on GitHub Pages.
-        You can add text, images, and links here to describe your project or network.
+        A simple static site for neutron star and multi-messenger astrophysics,
+        built with plain HTML and CSS and hosted on GitHub Pages.
       </p>
+      <a class="hero-button" href="conferences.html">
+        View conferences &amp; workshops
+      </a>
     </section>
 
+    <!-- News section -->
     <section>
-      <h2>News & Announcements</h2>
+      <h2>News &amp; Announcements</h2>
       <ul class="news-list">
-        <li><strong>2025-11-19</strong> — Website launched.</li>
-        <li><strong>2025-12-01</strong> — First workshop on neutron star physics.</li>
+        <li>
+          <strong>2025-11-19</strong> — Website launched.
+        </li>
+        <li>
+          <strong>2025-12-01</strong> — First workshop on neutron star physics.
+        </li>
       </ul>
+    </section>
+
+    <!-- Optional highlight cards (you can edit or remove) -->
+    <section>
+      <h2>Highlights</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>About the Network</h3>
+          <p>
+            Coordinating research on neutron stars across theory, observation,
+            and numerical modelling.
+          </p>
+          <p><a href="history.html">Read the history</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Conferences &amp; Meetings</h3>
+          <p>
+            Regular meetings bringing together researchers in gravitational
+            waves, X-ray astronomy, and nuclear physics.
+          </p>
+          <p><a href="conferences.html">See upcoming events</a></p>
+        </article>
+
+        <article class="card">
+          <h3>People</h3>
+          <p>
+            A network of scientists from institutes across Europe and beyond.
+          </p>
+          <p><a href="people.html">Meet the team</a></p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>
       © 2025 PHAROS-like Network · Hosted on
-      <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+      <a href="https://pages.github.com/" target="_blank" rel="noopener">
+        GitHub Pages
+      </a>
     </p>
   </footer>
 </body>
