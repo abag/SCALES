@@ -83,7 +83,8 @@ nav .dropbtn {
 
 /* Dropdown panel */
 nav .dropdown-content {
-  display: none;              /* <-- THIS hides WG1–WG4 by default */
+  /* default hidden – inline HTML also sets display:none as backup */
+  display: none;
   position: absolute;
   background-color: #2b3b4f;
   min-width: 220px;
@@ -105,9 +106,9 @@ nav .dropdown-content a:hover {
   background-color: #394b63;
 }
 
-/* Show dropdown on hover */
+/* Show dropdown on hover (force with !important) */
 nav .dropdown:hover .dropdown-content {
-  display: block;
+  display: block !important;
 }
 
 /* Main content container */
