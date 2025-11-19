@@ -30,13 +30,6 @@ header {
   flex-direction: column;
 }
 
-/* Logo */
-.header-logo img {
-  max-height: 60px;      /* adjust as you like */
-  width: auto;
-  display: block;
-}
-
 .site-title h1 {
   margin-bottom: 0.25rem;
   font-size: 1.8rem;
@@ -45,6 +38,13 @@ header {
 .site-title p {
   font-size: 0.95rem;
   opacity: 0.85;
+}
+
+/* Logo */
+.header-logo img {
+  max-height: 60px;
+  width: auto;
+  display: block;
 }
 
 /* Navigation */
@@ -68,6 +68,46 @@ nav a:hover {
 nav a.active {
   border-bottom-color: #f4c542;
   font-weight: 600;
+}
+
+/* Dropdown container */
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* WGs "button" */
+nav .dropbtn {
+  cursor: pointer;
+}
+
+/* Dropdown panel */
+nav .dropdown-content {
+  display: none;              /* hidden by default */
+  position: absolute;
+  background-color: #2b3b4f;
+  min-width: 220px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+/* Links inside dropdown */
+nav .dropdown-content a {
+  display: block;
+  padding: 0.4rem 0.75rem;
+  margin-right: 0;            /* override nav a margin */
+  border-bottom: none;        /* no underline bar here */
+  font-size: 0.9rem;
+}
+
+/* Highlight dropdown items on hover */
+nav .dropdown-content a:hover {
+  background-color: #394b63;
+}
+
+/* Show dropdown on hover */
+nav .dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Main content container */
@@ -137,7 +177,7 @@ main p {
   margin-bottom: 0.5rem;
 }
 
-/* Card grid (for highlights, conferences, people, etc.) */
+/* Card grid (for highlights, etc.) */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -169,3 +209,14 @@ footer a {
   text-decoration: underline;
 }
 
+/* Simple mobile tweak */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-logo {
+    align-self: flex-end;
+  }
+}
