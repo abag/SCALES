@@ -76,15 +76,14 @@ nav .dropdown {
   display: inline-block;
 }
 
-/* Make the WGs "button" look like other nav links */
+/* WGs button uses same base nav styles; just add pointer */
 nav .dropbtn {
   cursor: pointer;
 }
 
 /* Dropdown panel */
 nav .dropdown-content {
-  /* default hidden – inline HTML also sets display:none as backup */
-  display: none;
+  display: none; /* hidden by default */
   position: absolute;
   background-color: #2b3b4f;
   min-width: 220px;
@@ -96,8 +95,8 @@ nav .dropdown-content {
 nav .dropdown-content a {
   display: block;
   padding: 0.4rem 0.75rem;
-  margin-right: 0;            /* override nav a margin */
-  border-bottom: none;        /* no bottom border in dropdown */
+  margin-right: 0;
+  border-bottom: none;
   font-size: 0.9rem;
 }
 
@@ -128,11 +127,19 @@ main h2 {
   padding-bottom: 0.25rem;
 }
 
+main h3 {
+  margin: 1.5rem 0 0.5rem;
+}
+
+main h4 {
+  margin: 0.25rem 0 0.5rem;
+}
+
 main p {
   margin: 0.5rem 0 1rem;
 }
 
-/* Hero section */
+/* Hero section (used on index.html) */
 .hero {
   background: linear-gradient(135deg, #1c2a39, #394b63);
   color: #fff;
@@ -178,7 +185,7 @@ main p {
   margin-bottom: 0.5rem;
 }
 
-/* Card grid (for highlights, etc.) */
+/* Card grid (for highlights, board, WGs, etc.) */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -193,7 +200,18 @@ main p {
   border: 1px solid #dde3ee;
 }
 
-.card h3 {
+.card h3,
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Portrait images in cards */
+.card .portrait {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
   margin-bottom: 0.5rem;
 }
 
