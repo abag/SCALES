@@ -289,3 +289,85 @@ footer a {
   color: #666;
   margin-top: 0.5rem;
 }
+
+.wg-list {
+  list-style: none;
+  margin-top: 0.5rem;
+  padding-left: 0;
+}
+
+.wg-list li {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e1e5ef;
+}
+
+.wg-list li:last-child {
+  border-bottom: none;
+}
+
+/* Layout for each meeting: image + text side by side */
+.wg-meeting {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.wg-image {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background: #ccc; /* fallback if image is missing */
+}
+
+.wg-text {
+  flex: 1;
+}
+
+.wg-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.wg-title {
+  margin: 0.15rem 0 0.25rem;
+}
+
+.wg-title a {
+  color: #1c2a39;
+  text-decoration: none;
+}
+
+.wg-title a:hover {
+  text-decoration: underline;
+}
+
+.wg-meta {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.wg-desc {
+  font-size: 0.9rem;
+}
+
+/* Slightly faded style for archived meetings */
+.wg-list-archive .wg-date,
+.wg-list-archive .wg-meta {
+  color: #888;
+}
+
+/* On small screens, stack image above text */
+@media (max-width: 600px) {
+  .wg-meeting {
+    flex-direction: column;
+  }
+
+  .wg-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
