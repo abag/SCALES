@@ -29,8 +29,8 @@
         <a href="board.html">Board</a>
 
         <div class="dropdown">
-          <a href="WG.html" class="dropbtn">WGs</a>
-          <!-- keep hidden by default if CSS fails -->
+          <a class="dropbtn">WGs</a>
+          <!-- NOTE: inline style to force hidden by default -->
           <div class="dropdown-content" style="display: none;">
             <a href="wg1.html">WG1 – Vortex dynamics</a>
             <a href="wg2.html">WG2 – Superfluid Turbulence</a>
@@ -39,7 +39,17 @@
           </div>
         </div>
 
-        <a href="activities.html">Activities</a>
+        <!-- Activities dropdown -->
+        <div class="dropdown">
+          <a class="dropbtn">Activities</a>
+          <div class="dropdown-content" style="display: none;">
+            <a href="wgmeetings.html">WG meetings</a>
+            <a href="conferences.html">Conferences</a>
+            <a href="schools.html">Schools</a>
+            <a href="outreach.html">Outreach</a>
+          </div>
+        </div>
+        
         <a href="jobs.html" class="active">Jobs</a>
       </nav>
     </div>
