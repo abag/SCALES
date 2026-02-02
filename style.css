@@ -411,3 +411,26 @@ footer a {
 .content li a {
   word-break: break-word;
 }
+
+/* STSM callout box */
+.callout {
+  margin: 1rem 0rem 1rem; /* top, left/right, bottom */
+  padding: 1rem 1rem 1rem;
+
+  background: #1c2a39;  /* dark blue — tweak if needed */
+  color: #fff;
+
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 8px;
+}
+
+.callout h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.callout a {
+  color: #fff;
+  text-decoration: underline;
+}
+
