@@ -383,6 +383,12 @@ footer a {
   list-style-position: outside;
 }
 
+.content ol {
+  margin: 1em 0 1em 1.5em;
+  padding: 0;
+  list-style-position: inside;
+}
+
 .content li {
   margin-bottom: 0.5em;
 }
