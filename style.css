@@ -440,3 +440,10 @@ footer a {
   text-decoration: underline;
 }
 
+.footer-logo {
+  display: block;
+  margin: -2rem auto 0; /* space above, centered */
+  height: 100px;          /* tweak size */
+  width: auto;
+  opacity: 1.0;          /* optional: subtle */
+}
