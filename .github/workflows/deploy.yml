@@ -1,0 +1,16 @@
+name: Deploy to Server
+on:
+  push:
+    branches: [ main ] 
+
+jobs:  
+  trigger-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Trigger server update
+        run: |
+          eval $(ssh-agent -s)
+          echo "${{ secrets.SSH_DEPLOYMENT_KEY }}" | ssh-add -
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null scales@camk.pl
