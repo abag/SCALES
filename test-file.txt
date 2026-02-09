@@ -1,0 +1,2 @@
+Testing if it commits automatically if I create this file.
+chris (@camk.edu.pl)
