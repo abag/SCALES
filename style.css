@@ -477,3 +477,13 @@ footer a {
   transform: translateY(-3px);
   color: #666;
 }
+
+/* Expandable archived call text (Past events page) */
+.content details {
+  margin-top: 0.75rem;
+}
+
+.content details summary {
+  cursor: pointer;
+  font-weight: 700;
+}
